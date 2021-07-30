@@ -41,7 +41,7 @@
       >
         License and Documentation
       </p>
-      <p class="label">你还是个急性子</p>
+      <p>汉化：你还是个急性子</p>
     </section>
   </div>
 </template>
@@ -49,6 +49,7 @@
 <script>
 import * as pckg from './../../../../package.json'
 import { shell } from 'electron'
+
 export default {
   name: 'DrawerAbout',
   data() {
@@ -77,6 +78,7 @@ h2 {
   letter-spacing: 0.05em;
   margin: 0.5em 0;
 }
+
 section {
   align-items: center;
   display: flex;
@@ -84,6 +86,7 @@ section {
   padding-top: 2em;
   height: 100%;
 }
+
 .label {
   font-size: 14px;
   letter-spacing: 0.05em;
@@ -98,3 +101,6 @@ section {
   }
 }
 </style>
+
+    :not([class*='fa']):not([class*='icon']):not([class*='logo']):not([class*='code'])
+    * pre,* pre *,* code,* code *,* input,* button,* textarea,* kbd,* i,* em
