@@ -1,3 +1,4 @@
+中文汉化版
 <div align="center">
   <img alt="Pomotroid" src=".github/images/pomotroid-title.png" width="800px">
 </div>
