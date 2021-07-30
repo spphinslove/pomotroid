@@ -37,11 +37,11 @@
       </p>
       <p
         class="label link"
-        @click="openUrl('https://github.com/splode/pomotroid')
+        @click="openUrl('https://github.com/splode/pomotroid')"
       >
         License and Documentation
       </p>
-      <p>汉化：你还是个急性子</p>
+      <p class="label">你还是个急性子</p>
     </section>
   </div>
 </template>
@@ -49,25 +49,24 @@
 <script>
 import * as pckg from './../../../../package.json'
 import { shell } from 'electron'
-
 export default {
   name: 'DrawerAbout',
   data() {
     return {
       license: pckg.license,
-      version: pckg.version,
+      version: pckg.version
     }
   },
   computed: {
     releaseUrl() {
       return `https://github.com/Splode/pomotroid/releases/tag/v${this.version}`
-    },
+    }
   },
   methods: {
     openUrl(url) {
       shell.openExternal(url)
-    },
-  },
+    }
+  }
 }
 </script>
 
@@ -78,7 +77,6 @@ h2 {
   letter-spacing: 0.05em;
   margin: 0.5em 0;
 }
-
 section {
   align-items: center;
   display: flex;
@@ -86,7 +84,6 @@ section {
   padding-top: 2em;
   height: 100%;
 }
-
 .label {
   font-size: 14px;
   letter-spacing: 0.05em;
