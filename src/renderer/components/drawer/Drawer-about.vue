@@ -37,12 +37,11 @@
       </p>
       <p
         class="label link"
-        @click="openUrl('https://github.com/splode/pomotroid')"
+        @click="openUrl('https://github.com/splode/pomotroid')
       >
         License and Documentation
       </p>
-       <p>汉化：你还是个急性子</p>
-      
+      <p>汉化：你还是个急性子</p>
     </section>
   </div>
 </template>
@@ -56,19 +55,19 @@ export default {
   data() {
     return {
       license: pckg.license,
-      version: pckg.version
+      version: pckg.version,
     }
   },
   computed: {
     releaseUrl() {
       return `https://github.com/Splode/pomotroid/releases/tag/v${this.version}`
-    }
+    },
   },
   methods: {
     openUrl(url) {
       shell.openExternal(url)
-    }
-  }
+    },
+  },
 }
 </script>
 
