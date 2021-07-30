@@ -1,6 +1,6 @@
 <template>
   <div class="Container">
-    <p class="Drawer-heading">Themes</p>
+    <p class="Drawer-heading">主题</p>
     <div
       v-for="(t, i) in themer.themes"
       :key="i"

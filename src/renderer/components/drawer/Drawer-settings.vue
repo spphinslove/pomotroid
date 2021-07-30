@@ -1,6 +1,6 @@
 <template>
   <div class="Container">
-    <p class="Drawer-heading">Settings</p>
+    <p class="Drawer-heading">设置</p>
     <div class="Setting-wrapper">
       <p class="Setting-title">置顶</p>
       <div
