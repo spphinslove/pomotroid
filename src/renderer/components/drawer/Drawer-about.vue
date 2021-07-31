@@ -37,11 +37,11 @@
       </p>
       <p
         class="label link"
-        @click="openUrl('https://github.com/splode/pomotroid')"
+        @click="openUrl('https://github.com/spphinslove/pomotroid')"
       >
         License and Documentation
       </p>
-      <p>汉化：你还是个急性子</p>
+      <p>汉化者：你还是个急性子</p>
     </section>
   </div>
 </template>
